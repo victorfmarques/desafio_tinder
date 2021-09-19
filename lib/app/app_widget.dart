@@ -1,4 +1,5 @@
 import 'package:desafio_tinder/app/shared/resources/navigation/app_routes.dart';
+import 'package:desafio_tinder/app/shared/resources/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -10,8 +11,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Tinder',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-        backgroundColor: Colors.pink,
+        primaryColor: AppColors.primaryColor,
       ),
       initialRoute: AppRoutes.loginRoute,
     ).modular();
